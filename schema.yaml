@@ -1,0 +1,15 @@
+- name: public.agent
+  columns:
+    id: BIGINT
+    connection_state: TEXT
+    created_at: TIMESTAMP
+    hostname: TEXT
+    ip_address: TEXT
+    last_job_finished_at: TIMESTAMP
+    name: TEXT
+    organization_id: TEXT
+    priority: TEXT
+    url: TEXT
+    #user_agent: TEXT
+    version: TEXT
+    web_url: TEXT
