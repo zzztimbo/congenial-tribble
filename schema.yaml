@@ -10,6 +10,6 @@
     organization_id: TEXT
     priority: TEXT
     url: TEXT
-    #user_agent: TEXT
+    user_agent: TEXT
     version: TEXT
     web_url: TEXT
