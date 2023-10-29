@@ -1,7 +1,7 @@
 _default:
     @just --list --unsorted
 
-# start here: runs install, create_external_models, and plan
+# start here: runs start_db, install, migrate, create_external_models, and plan
 go: start_db install migrate create_external_models plan
 
 # installs Python dependencies via Poetry
@@ -28,5 +28,9 @@ migrate:
     poetry run yoyo apply --batch
 
 # sqlmesh web ui
-web_ui: 
+web_ui:
     poetry run sqlmesh ui
+
+# comment out organization_id field
+comment_out:
+    sed -i 's/organization_id:/#organization_id:/' schema.yaml
