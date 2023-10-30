@@ -9,7 +9,10 @@
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {},
 		"ghcr.io/devcontainers-contrib/features/neovim-apt-get:1": {},
-		"ghcr.io/guiyomh/features/just:0": {}
+		"ghcr.io/guiyomh/features/just:0": {},
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
